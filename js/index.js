@@ -40,3 +40,55 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+// nav
+const nav = document.querySelector('header nav')
+nav.children[0].innerText = siteContent["nav"]["nav-item-1"]
+nav.children[1].innerText = siteContent["nav"]["nav-item-2"]
+nav.children[1].innerText = siteContent["nav"]["nav-item-3"]
+nav.children[2].innerText = siteContent["nav"]["nav-item-4"]
+nav.children[3].innerText = siteContent["nav"]["nav-item-5"]
+nav.children[4].innerText = siteContent["nav"]["nav-item-6"]
+
+// cta
+const heading = document.querySelector('.cta-text h1')
+heading.innerText = siteContent["cta"]["h1"]
+
+const button = document.querySelector('.cta-text button')
+button.innerText = siteContent["cta"]["button"]
+
+const headerImg = document.getElementById('cta-img')
+headerImg.setAttribute('src', siteContent['cta']['img-src'])
+
+
+// main content
+const topHeader = document.querySelector('.top-content')
+topHeader.children[0].children[0].innerText = siteContent['main-content']['features-h4']
+topHeader.children[0].children[1].innerText = siteContent['main-content']['features-content']
+
+topHeader.children[1].children[0].innerText = siteContent['main-content']['about-h4']
+topHeader.children[1].children[1].innerText = siteContent['main-content']['about-content']
+
+const middleImg = document.getElementById('middle-img')
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
+
+const bottom = document.querySelector('.bottom-content')
+bottom.children[0].children[0].innerText = siteContent['main-content']['services-h4']
+bottom.children[0].children[1].innerText = siteContent['main-content']['services-content']
+
+bottom.children[1].children[0].innerText = siteContent['main-content']['product-h4']
+bottom.children[1].children[1].innerText = siteContent['main-content']['product-content']
+
+bottom.children[2].children[0].innerText = siteContent['main-content']['vision-h4']
+bottom.children[2].children[1].innerText = siteContent['main-content']['vision-content']
+
+// contact
+const contactSection = document.querySelector('.contact')
+
+contactSection.children[0].innerText = siteContent['contact']['contact-h4']
+contactSection.children[1].innerText = siteContent['contact']['address']
+contactSection.children[2].innerText = siteContent['contact']['phone']
+contactSection.children[3].innerText = siteContent['contact']['email']
+
+// footer
+const footer = document.querySelector('footer p')
+footer.innerText = siteContent['footer']['copyright']
