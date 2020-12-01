@@ -40,14 +40,26 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
 // nav
 const nav = document.querySelector('header nav')
+
 nav.children[0].innerText = siteContent["nav"]["nav-item-1"]
+
 nav.children[1].innerText = siteContent["nav"]["nav-item-2"]
 nav.children[1].innerText = siteContent["nav"]["nav-item-3"]
 nav.children[2].innerText = siteContent["nav"]["nav-item-4"]
 nav.children[3].innerText = siteContent["nav"]["nav-item-5"]
 nav.children[4].innerText = siteContent["nav"]["nav-item-6"]
+
+Array.from(navB).forEach(item => item.style.color = 'green')
+
+const meLink = document.createElement('a')
+meLink.innerText = 'me'
+nav.appendChild(meLink)
+const meLink2 = document.createElement('a')
+meLink.innerText = 'me2'
+nav.appendChild(meLink2)
 
 // cta
 const heading = document.querySelector('.cta-text h1')
